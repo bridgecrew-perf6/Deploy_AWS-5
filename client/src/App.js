@@ -61,7 +61,7 @@ class App extends Component {
         <div className="container">
           {isLogin
             ? <div className="success">로그인에 성공했습니다</div>
-            : <div className="status">이름에는 김코딩,비밀번호에는 1234만 입력 가능합니다 처음부터 시작하는 AWS! 재도전 </div>
+            : <div className="status">이름에는 김코딩,비밀번호에는 1234만 입력 가능합니다 클라 동작 확인 </div>
           }
           {isLogin
             ? (status
