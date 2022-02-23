@@ -7,3 +7,7 @@ export DATABASE_PORT=$(aws ssm get-parameters --region ap-northeast-2 --names DA
 export DATABASE_HOST=$(aws ssm get-parameters --region ap-northeast-2 --names DATABASE_HOST --query Parameters[0].Value | sed 's/"//g')
 
 authbind --deep pm2 start app.js
+
+sleep 10s && pm2 status 
+echo $DATABASE_HOST     
+node check.js           
